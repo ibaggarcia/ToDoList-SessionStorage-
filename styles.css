@@ -1,0 +1,141 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 100px 100px;
+    grid-auto-rows: 100px;
+    justify-items: center;
+    background:  linear-gradient(90deg, rgba(43,93,110,1) 32%, rgba(25,168,168,1) 70%);
+}
+
+.head {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+h1 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+h3 {
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.addTask {
+    display: flex;
+    align-items: center;
+}
+
+.taskInput {
+    height: 50px;
+    width: 350px;
+    text-align: center;
+    margin-right: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 30px;
+    border-color: transparent;
+    outline: none;
+}
+
+
+.addTaskBtn {
+    height: 50px;
+    width: 150px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+}
+
+.addTaskBtn:hover, .taskBtn:hover{
+    color: gainsboro;
+}
+
+.task {
+    display: grid;
+    width: 600px;
+    grid-template-columns: 50px 1fr 100px 100px;
+    justify-items: center;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    width: 60px;
+}
+
+.checkTask::before {
+    content: "";
+    padding: 15px;
+    padding-left: 25px;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+}
+
+.checkTask:checked{
+    display: flex;
+    margin-top: 5px;
+    margin-right: 18px;
+    height: 50px;
+    width: 45px;
+    background-color: green;
+    border-radius: 10px;
+}
+
+.taskText {
+    height: 70px;
+    width: 350px;
+    margin-left: 5px;
+    background-color: white;
+    color: black;
+    outline: none;
+    border-radius: 30px;
+    border: transparent;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+    border-end-end-radius: 0px;
+    border-start-end-radius: 0px;
+}
+
+.taskBtn {
+    margin: 0;
+    height: 72px;
+    width: 100%;
+    background-color: white;
+    border: transparent;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.delete {
+    border-start-end-radius: 25px;
+    border-end-end-radius: 25px;
+}
+
+.delete:hover {
+    color: red;
+}
+
+.save {
+    color: green;
+}
+
